@@ -1,4 +1,4 @@
-# Comment créer l'exécutable à partir du script python ?
+# Comment créer l'exécutable keylogger à partir du script python ?
 
 -- Se rendre d'abord dans le dossier cloné avec l'explorateur de fichiers et remplacer, dans la barre du chemin vers le dossier courant, par ```powershell```.
 

